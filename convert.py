@@ -4,7 +4,7 @@ import os
 
 #Pulls from the current directory. Will change this to be more versatile in what directory is being used
 # path = Path.cwd()
-path = "PATH"
+path = r"PATH"
 #Creates a list of all files in chosen directory that have the .webp extension
 webp_files = [f for f in os.listdir(path) if f.endswith(".webp")]
 
@@ -16,7 +16,5 @@ for file in webp_files:
     except FileNotFoundError:
         image.save(f"{path}\\{file}.jpeg", "jpeg")
     os.remove(path + "\\" + file)
-
-
 
 
