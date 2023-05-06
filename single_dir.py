@@ -4,7 +4,7 @@ import os
 
 #Pulls from the current directory. Will change this to be more versatile in what directory is being used
 # path = Path.cwd()
-path = r"PATH"
+path = r"C:\Users\Lowry\Downloads\Fukosoukan Katei"
 #Creates a list of all files in chosen directory that have the .webp extension
 webp_files = [f for f in os.listdir(path) if f.endswith(".webp")]
 
